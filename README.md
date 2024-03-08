@@ -3,4 +3,4 @@ This notebook initializes and creates a table from a CSV file containing all of 
 One important note is that I ran everything on a Docker image I created. This image is essentially a Jupyter notebook that contains all the dependencies you need for this task. The main reason for this choice is that running Spark locally, especially on Windows, is much more difficult than running it in a containerized environment.
 
 
-I also created a simple airflow script that just reads the csv and transforms it to a delta table. If you try to do the same and are using docker remember chmod. Airflow does not have read or write rights to new files you create.
+I also created a simple airflow script using polars that just reads the csv and transforms it to a delta table. If you try to do the same and are using docker remember chmod. Airflow does not have read or write rights to new files you create.
